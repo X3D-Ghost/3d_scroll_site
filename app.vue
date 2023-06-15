@@ -26,8 +26,8 @@
       </Frame>
       <Frame :scroll="top" :order="2" :scroll-trigger="scrollStart + windowHeight" ref="FrameItems">
         <div class="grid">
-          <div class="g-col-6">
-            <img src="/img/image-1.jpg" class="img-fluid" alt="">
+          <div class="g-col-6" style="perspective: 1000px">
+            <img src="/img/image-1.jpg" class="img-fluid" style="transform: translateZ(calc(var(--frame-depth)/2))" alt="">
           </div>
           <div class="g-col-6">
             <h2 class="display-2">
@@ -43,8 +43,8 @@
               Zaebis!
             </h2>
           </div>
-          <div class="g-col-6">
-            <img src="/img/image-2.jpg" class="img-fluid" alt="">
+          <div class="g-col-6" style="perspective: 1000px">
+            <img src="/img/image-2.jpg" class="img-fluid" style="transform: translateZ(calc(var(--frame-depth)/2))" alt="">
           </div>
         </div>
       </Frame>

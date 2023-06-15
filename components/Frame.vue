@@ -19,7 +19,7 @@ const opacity = computed(()=>difference.value > 300 || difference.value < -2000 
 	</div>
 </template>
 
-<style scoped>
+<style lang="scss">
  .frame {
 		 --frame-depth: v-bind(scrollDepth);
 		 --opacity: v-bind(opacity);
@@ -42,5 +42,6 @@ const opacity = computed(()=>difference.value > 300 || difference.value < -2000 
 		 height: 100%;
 		 width: 100%;
 		 //background-color: black;
+		 perspective: var(--frame-depth);
  }
 </style>
