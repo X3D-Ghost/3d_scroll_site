@@ -2,8 +2,8 @@
   <div class="site-wrapper">
     <FramesTrack ref="FramesTrackRef">
       <Frame :scroll="top" :order="1" :scroll-trigger="scrollStart" ref="FrameItems">
-        <div class="container my-5">
-          <div class="p-5 text-center rounded-3">
+        <div class="container my-5 grid">
+          <div class="g-col-md-6 p-5 text-center rounded-3">
             <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"></use></svg>
             <h1 class="text-body-emphasis">Jumbotron with icon</h1>
             <p class="col-lg-8 mx-auto fs-5 text-muted">
@@ -18,6 +18,9 @@
                 Secondary link
               </button>
             </div>
+          </div>
+          <div class="g-col-md-6">
+            <img src="/img/image-4.jpg" class="img-fluid" alt="">
           </div>
         </div>
       </Frame>
